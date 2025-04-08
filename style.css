@@ -55,10 +55,10 @@ body.dark-mode {
 .theme-toggle {
     background: linear-gradient(135deg, #b993d6, #8ca6db);
         order: 1;
-        width: 4vw;
-        height: 4vw;
+        width: 3vw;
+        height: 3vw;
         border-radius: 50%;
-        font-size: 2vw;
+        font-size: 1vw;
         margin-right: 2vw;
         display: flex;
         align-items: center;

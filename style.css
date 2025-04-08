@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-color: #021526; 
+    color: #E2E2B6;
 }
 
 html {
@@ -10,6 +12,16 @@ html {
     overflow-x: hidden;
 
 }
+
+
+button {
+        background-color: #6EACDA;
+        color: black;
+
+        &:hover{
+            background-color: #a1a0ee;
+        }
+      }
 
 
 
@@ -443,7 +455,8 @@ html {
     color: white;
     transform: translate(-50%);
     margin-top: 5vw;
-    background-image: radial-gradient(rgb(56, 4, 101), rgb(144, 113, 150));
+     background-color: #6EACDA;
+/*     background-image: radial-gradient(rgb(56, 4, 101), rgb(144, 113, 150)); */
     box-shadow: 0 4px 3vw rgba(0, 0, 0, 0.1);
 }
 

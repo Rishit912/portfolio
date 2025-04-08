@@ -1,20 +1,47 @@
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: #021526; 
-    color: #E2E2B6;
 }
 
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 
+
 }
 
 
-button {
+/* dark and light  */
+
+
+/* Dark Theme */
+body.dark-mode {
+    background-color: #021526; /* deep dark background */
+    color: #E0E0E0; /* light gray text */
+  }
+  
+  /* Target headings, paragraphs, links, etc. for dark mode */
+  body.dark-mode h1,
+  body.dark-mode h2,
+  body.dark-mode h3,
+  body.dark-mode h4,
+  body.dark-mode p,
+  body.dark-mode span,
+  body.dark-mode li
+  
+  
+  {
+      color: #E2E2B6 !important;
+    }
+
+    
+    
+    
+      body.dark-mode button {
         background-color: #6EACDA;
         color: black;
 
@@ -22,6 +49,77 @@ button {
             background-color: #a1a0ee;
         }
       }
+    
+     
+  /* Toggle theme button */
+.theme-toggle {
+    background: linear-gradient(135deg, #b993d6, #8ca6db);
+        order: 1;
+        width: 4vw;
+        height: 4vw;
+        border-radius: 50%;
+        font-size: 2vw;
+        margin-right: 2vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid white;
+        padding: 0; /* Not needed when width/height are fixed */
+    }
+
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(185, 147, 214, 0.4);
+    z-index: 1001;
+    margin: 0 0.8rem 0 0; /* spacing to right of logo and left of menu icon */
+   
+}
+
+/* Navbar structure */
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0.5rem 1rem;
+}
+
+/* Hamburger + toggle layout for mobile */
+@media (max-width: 768px)  {
+    .navbar-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu-icon {
+        order: 2.5; /* place hamburger icon at far right */
+    }
+
+    .theme-toggle {
+        order: 1;
+        width: 4vw;
+        height: 4vw;
+        border-radius: 50%;
+        font-size: 2vw;
+        margin-right: 2vw;
+        margin-top: -1.5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid white;
+        padding: 0; /* Not needed when width/height are fixed */
+    }
+
+    .logo {
+        order: 0;
+        flex-grow: 1;
+    }
+}
+
+
+  
+
 
 
 
@@ -42,9 +140,9 @@ button {
 
 /* navigation bar menu  */
 .navbar {
-    background-color: rgba(97, 99, 123, 0.762);
+    background-color: #A9B5DF;
 
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     height: 4vw;
@@ -363,9 +461,10 @@ button {
     gap: 30px; /* Increased gap between job cards */
     justify-content: center;
     padding: 20px;
+   
 }
 
-.job-card {
+.job-card,.job-card1{
     background: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -375,6 +474,19 @@ button {
     text-align: center;
     padding: 15px;
     transition: transform 0.3s ease;
+    
+}
+
+.job-card{
+    border-top-left-radius:12%;
+    border-top-right-radius:12% ;
+    border-bottom-right-radius:12% ;
+    border-bottom-left-radius:12% ;}
+.job-card1{
+    border-top-left-radius:12%;
+    border-top-right-radius:12% ;
+    border-bottom-right-radius:12% ;
+    border-bottom-left-radius:12% ;
 }
 
 .job-card:hover {
@@ -399,6 +511,7 @@ button {
 .job-description {
     font-size: 14px;
     padding: 10px;
+    
 }
 
 .job-button, .job-button2 {
@@ -420,6 +533,13 @@ button {
     top: 6vw;
 }
 
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -452,19 +572,24 @@ button {
     padding: 3vw;
     border-radius: 1.5vw;
     left: 33.5%;
-    color: white;
+    color: rgb(26, 24, 24);
     transform: translate(-50%);
     margin-top: 5vw;
-     background-color: #6EACDA;
-/*     background-image: radial-gradient(rgb(56, 4, 101), rgb(144, 113, 150)); */
+    /* background-image: radial-gradient(rgb(56, 4, 101), rgb(144, 113, 150)); */
+    background-color: #6EACDA;
     box-shadow: 0 4px 3vw rgba(0, 0, 0, 0.1);
+
+    
+    border-top-right-radius:15% ;
+  
 }
 
 h2 {
     text-align: center;
     margin-bottom: 2vw;
     font-size: 2.8vw;
-    color: #fffbfb;
+    color: #131212;
+   
 }
 
 
@@ -870,7 +995,7 @@ footer a:hover {
         align-items: center;
         position: relative;
         top: -10vw;
-        background-image: linear-gradient(rgba(15, 72, 226, 0.189), rgba(8, 8, 222, 0.205));
+        background-color: #99c1df;
     }
 
     .marqueeimg img {
@@ -905,7 +1030,7 @@ footer a:hover {
     }
     
     
-    .job-card {
+    .job-card,.job-card1 {
         width: 80%; /* Increase width for mobile view */
         max-width: 500px; /* Set max width for larger screens */
         background: #f8f9fa;

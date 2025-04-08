@@ -1,3 +1,18 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.getElementById("themeToggle");
+
+    toggleButton.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+
+        // Change button text/icon based on mode
+        if (document.body.classList.contains("dark-mode")) {
+            toggleButton.textContent = "☀️";
+        } else {
+            toggleButton.textContent = "🌙";
+        }
+    });
+});
+
 
 
 // navigation bar javascript for humberger menu open and close
@@ -57,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector('#Portfolio').scrollIntoView({
             behavior: 'smooth',
             block: 'start',
-            inline: 'center'
+            inline: 'nearest'
         });
     });
 });

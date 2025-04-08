@@ -143,7 +143,7 @@ body.dark-mode {
 .navbar {
     background-color: #A9B5DF;
 
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     height: 4vw;

@@ -65,12 +65,15 @@ body.dark-mode {
         justify-content: center;
         border: 2px solid white;
         padding: 0; /* Not needed when width/height are fixed */
+    
+
     transition: all 0.3s ease;
     box-shadow: 0 4px 20px rgba(185, 147, 214, 0.4);
     z-index: 1001;
     margin: 0 0.8rem 0 0; /* spacing to right of logo and left of menu icon */
    
 }
+
 
 /* Navbar structure */
 .navbar-content {

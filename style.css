@@ -1159,8 +1159,10 @@ footer a:hover {
         top: 0vw;
         font-weight: bold;
     }
+
+    
     .navbar {
-        background-color: rgba(97, 99, 123, 0.762);
+        background-color: #A9B5DF;
         position: fixed;
         top: 0;
         width: 100%;
@@ -1168,6 +1170,8 @@ footer a:hover {
         z-index: 1000;
         padding: 1.5vw;
     }
+    
+    
     
     
 }

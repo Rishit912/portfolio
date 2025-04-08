@@ -140,9 +140,10 @@ body.dark-mode {
 
 
 /* navigation bar menu  */
+
+/* navigation bar menu  */
 .navbar {
     background-color: #A9B5DF;
-
     position: fixed;
     top: 0;
     width: 100%;

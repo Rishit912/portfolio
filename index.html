@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rishit Dangi</title>
+    <link rel="icon" href="rd.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+
+
+    <nav class="navbar">
+      <li class="logo"><img src="rd.png" alt="abc" /></li>
+      
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#home1">Home</a></li>
+        <li><a href="#About1">About Me</a></li>
+        <li><a href="#skills1">Skills</a></li>
+        <li><a href="#projects12">Projects</a></li>
+        <li><a href="#ContactMe">Contact Me</a></li>
+      </ul>
+    </nav>
+
+    <br />
+</div>
+
+
+
+<!-- home -->
+
+<section class="about-me">
+    <div class="about-me-text" id="home1">
+        <div class="typewriter">
+          <h1 id="name"></h1>
+        </div>
+        <p>
+          Motivated IT graduate with a strong foundation in
+          programming,designing and also good knowledge of computer networking
+          and database management. Proficient problem solving, software
+          development with a keen interest in learning emerging IT trends.
+        </p>
+     <br><br>
+        <p
+          id="typewriter"
+          class="typewrite"
+          data-type='["UI/UX Designer", "Frontend Developer", "JavaScript Enthusiast", "Problem Solver"]'
+          data-period="2000"
+        ></p>
+      </div>
+
+      <img src="Web_developer.gif" alt="My Image" />
+    </section  >
+
+
+
+
+
+
+    <!-- about me  -->
+ 
+
+    <h1 class="abtme"  >About me</h1>
+<section class="aboutme">
+  <img src="UI-UX-Design.gif" alt="abt"   id="About1">
+    <div class="txt-about-me">
+       <h1 >About Me</h1>
+        <p>
+            Hello! I'm Rishit, an enthusiastic undergraduate student pursuing a degree in Information Technology. With a strong foundation in programming, web development, and database management, I am passionate about leveraging technology to solve real-world problems.
+           <br> I am particularly interested in web-development and I am always eager to learn about emerging trends in the IT field. I believe that continuous learning and collaboration are key to personal and professional growth.
+        </p>
+     <br><br>
+
+     <div class="button2">
+        <a href="#ContactMe"> <button class="btn1" >Hire me</button></a>
+         <a href="Rishit_Dangi_Resume.pdf" download>
+           <button type="submit" name="btn2" class="btn2">Open Resume</button>
+         </a>
+       </div>
+     </div>
+
+      </div>
+
+    </section>
+
+
+
+
+    <!-- skills  -->
+    
+    <div class="skilldiv"  id="skills1">
+      <div class="skilldiv1">
+        <div class="myskill">
+          <h2>Skills</h2>
+        </div>
+        <div class="skill-section">
+          <h3>Tools</h3>
+          <div class="skill">
+            <div class="skill-item">
+              <img src="vscode.png" alt="vs-code" />
+              <h4>VS Code</h4>
+            </div>
+            <div class="skill-item">
+              <img src="ps.png" alt="android-studio" />
+              <h4>Photoshop</h4>
+            </div>
+            <div class="skill-item">
+              <img src="figma.png" alt="figma" />
+              <h4>Figma</h4>
+            </div>
+          </div>
+        </div>
+    
+
+        <div class="skill-section">
+          <h3>Programming Languages</h3>
+          <div class="skillimg">
+            <div class="skill-item">
+              <img src="html.png" alt="html5" />
+              <h4>HTML</h4>
+            </div>
+            <div class="skill-item">
+              <img src="css.png" alt="css" />
+              <h4>CSS</h4>
+            </div>
+            <div class="skill-item">
+              <img src="tailwind.png" alt="tailwind" />
+              <h4>Tailwind</h4>
+            </div>
+            <div class="skill-item">
+              <img src="javascript.png" alt="js" />
+              <h4>JavaScript</h4>
+            </div>
+            <div class="skill-item">
+              <img src="React.png" alt="React" />
+              <h4>React</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <img src="web_d.gif" alt="skill1" class="skill1" />
+    </div>
+    
+
+
+    <!-- project  -->
+
+
+ <!-- Projects Section -->
+ <section class="projects" id="projects12">
+  <h2>Projects</h2>
+  <div class="project-menu">
+      <button class="project-toggle active" onclick="toggleProjects('frontend')">Frontend Projects</button>
+      <button class="project-toggle" onclick="toggleProjects('uiux')">UI/UX Projects</button>
+  </div>
+  <div class="project-lists">
+      <div class="project-list" id="frontend" style="display: block;"></div>
+      <div class="project-list" id="uiux" style="display: none;"></div>
+  </div>
+</section>
+
+
+
+
+
+    <!-- contact me  -->
+
+    <h2 class="cntme" id="ContactMe">Contact Me</h2>
+    <div class="container" id="contactme">
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn" style="border: 2px solid black;">Send Message</button>
+      </form>
+    </div>
+
+   
+      <!--  -->
+      
+      <footer>
+        <div class="footer-container">
+            <!-- Logo Section (Optional) -->
+            <div class="footer-column footer-logo">
+                <img src="rd.png" alt="Logo" style="width: 10vw;">
+            </div>
+    
+            <!-- About Section -->
+            <div class="footer-column">
+                <h3>About</h3>
+                <p><strong>&copy; 2025 Rishit Dangi. 
+                  <br> All Rights Reserved.</strong></p>
+                <p>Passionate about creating beautiful and functional web experiences.</p>
+                <p>Contact me: <a href="mailto:dangirishit912@gmail.com">dangirishit912@gmail.com</a></p>
+            </div>
+    
+            <!-- Social Media Section -->
+            <div class="footer-column">
+                <h3>Follow Me</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/rishit-dangi-266aa4216" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/Rishit912" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="GitHub">
+                    </a>
+                    <a href="https://twitter.com/yourprofile" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" alt="Twitter">
+                    </a>
+                    <a href="https://www.instagram.com/rishit_dangi?igsh=cHo4MHdvbTMybXBw" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Copyright Section -->
+        <div class="copyright">
+            <p>&copy; 2025 Rishit Dangi. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+   </script>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

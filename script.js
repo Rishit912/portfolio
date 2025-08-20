@@ -92,7 +92,7 @@ window.onload = function() {
             title: "WorkSync",
             img: "./image.png",
             description: "WorkSync connects skilled but uneducated workers with potential employers, helping them find jobs in fields like plumbing, electrical work, and more. It simplifies the job search process for both workers and employers.",
-            link: "./Coming-Soon.html"
+            link: "https://rishit912.github.io/worksync/"
           },
 
           {
@@ -199,4 +199,5 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+
   
